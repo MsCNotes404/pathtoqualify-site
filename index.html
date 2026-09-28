@@ -91,7 +91,41 @@
     footer a { color:#dbeae7; }
     @media(max-width:800px) { .wrap { width:min(100% - 36px,600px); } header { height:70px; } .nav-right a:not(.button) { display:none; } .nav-right .button { padding:11px 14px; min-height:42px; font-size:12px; } .hero { padding:56px 0 65px; } .hero-grid,.visibility-grid,.honest-grid { grid-template-columns:1fr; gap:34px; } .portrait { min-height:470px; } .bar .wrap { display:block; } .bar span { display:block; margin-top:8px; } section { padding:68px 0; } .steps,.audiences { grid-template-columns:1fr; } footer .wrap { display:block; } footer .wrap > div+div { margin-top:14px; } }
     @media(prefers-reduced-motion:reduce) { html { scroll-behavior:auto; } }
-  </style>
+  
+  /* The buyer's side of it -- client proof (preview) */
+  .proof-section { background:var(--cream); }
+  .proof-section .section-intro h2 { font-size:clamp(36px,4vw,52px); line-height:1.14; margin-bottom:17px; }
+  .proof-card { border:1px solid var(--line); border-radius:8px; background:white; padding:29px 28px; }
+  .proof-feature { display:grid; grid-template-columns:1fr 300px; gap:44px; align-items:start; margin-bottom:16px; }
+  .proof-pair { display:grid; grid-template-columns:repeat(2,1fr); gap:16px; }
+  .proof-pair .proof-card { display:flex; flex-direction:column; }
+  .proof-card blockquote { margin:0; }
+  .proof-card blockquote p { color:var(--muted); font-size:16px; line-height:1.65; margin:0 0 14px; }
+  .proof-card blockquote p:last-of-type { margin-bottom:0; }
+  .proof-card .lead { font-family:'Playfair Display',Georgia,serif; font-weight:500; letter-spacing:-.02em;
+      font-size:clamp(22px,2.4vw,27px); line-height:1.35; color:var(--teal); margin:0 0 16px; }
+  .proof-card .jump { display:inline-flex; align-items:center; gap:10px; margin:2px 0 18px; font-size:13px; font-weight:700;
+      color:var(--teal); background:var(--light); border-radius:30px; padding:8px 14px; font-variant-numeric:tabular-nums; }
+  .proof-card .jump em { font-style:normal; font-weight:500; color:var(--muted); }
+  .proof-card .who { display:flex; align-items:center; gap:11px; border-top:1px solid var(--line); padding-top:15px; margin-top:20px; }
+  .proof-card .dot { width:32px; height:32px; border-radius:50%; background:var(--teal); color:white; display:grid;
+      place-items:center; font-size:13px; font-weight:700; flex:none; }
+  .proof-card .nm { font-weight:700; color:var(--ink); font-size:14px; }
+  .proof-card .rl { font-size:13px; color:var(--muted); }
+  .proof-card figure { margin:0; }
+  .proof-pair figure { margin-top:22px; }
+  .proof-card .cap { font-size:11px; font-weight:700; letter-spacing:.14em; text-transform:uppercase; color:var(--muted); margin:0 0 9px; }
+  .proof-card .shot { background:var(--ink); border-radius:8px; padding:10px; }
+  .proof-card .shot img { display:block; width:100%; height:auto; border-radius:5px; }
+  @media(max-width:800px) { .proof-feature { grid-template-columns:1fr; gap:26px; } .proof-feature figure { max-width:340px; }
+      .proof-pair { grid-template-columns:1fr; } }
+</style>
+<!-- Privacy-friendly analytics by Plausible -->
+<script async src="https://plausible.io/js/pa-QNYDof6Eyph5lccHtFump.js"></script>
+<script>
+  window.plausible=window.plausible||function(){(plausible.q=plausible.q||[]).push(arguments)},plausible.init=plausible.init||function(i){plausible.o=i||{}};
+  plausible.init()
+</script>
 </head>
 <body>
   <header><div class="wrap nav"><a class="brand" href="#top">PATH / TO / QUALIFY<small>Buyer credit support</small></a><nav class="nav-right" aria-label="Main"><a href="#how">How it works</a><a href="#partners">Who we help</a><a class="button" href="https://scheduler.zoom.us/gigi-3mtg1e/next-step">Book 15 minutes</a></nav></div></header>
@@ -102,7 +136,39 @@
     <section id="how"><div class="wrap"><div class="section-intro"><span class="eyebrow">A straightforward process</span><h2>What happens after you introduce a buyer</h2><p>The buyer gets a careful review. You get appropriate progress updates, with the buyer's permission.</p></div><div class="steps"><article class="step"><span class="num">01</span><h3>We hear their situation</h3><p>We learn what held up the loan and review the buyer's credit reports. If there is nothing appropriate for us to address, we say so.</p></article><article class="step"><span class="num">02</span><h3>We explain a plan</h3><p>We identify information that may be inaccurate or incomplete and explain the steps available to address it.</p></article><article class="step"><span class="num">03</span><h3>We keep you informed</h3><p>With the buyer's permission, you can follow the file's status and reconnect when they are ready to revisit financing.</p></article></div></div></section>
     <section class="visibility" id="visibility"><div class="wrap visibility-grid"><div><span class="eyebrow">Built for referral partners</span><h2>Know where the file stands without chasing updates.</h2><p>A referral shouldn't disappear into a black box. The partner view is designed to show progress and the pending next step without exposing the buyer's private credit reports.</p><p class="micro">Illustrative status view. Display only information the buyer authorizes you to share.</p></div><figure class="status" style="margin:0"><div class="status-top"><strong>Referral progress</strong><span class="badge">Example view</span></div><div class="status-label">Current stage</div><div class="status-title">Review in progress</div><div class="progress" role="img" aria-label="Illustration: three of four stages complete"><i aria-hidden="true"></i><i aria-hidden="true"></i><i aria-hidden="true"></i><i aria-hidden="true"></i></div><div class="status-bottom"><div><strong>Next step</strong>Waiting for buyer documents</div><div><strong>Your relationship</strong>Referring partner remains connected</div></div><figcaption class="micro" style="margin-top:18px">Illustration only — not a live view of any buyer's file.</figcaption></figure></div></section>
     <section class="honest"><div class="wrap honest-grid"><div><span class="eyebrow">What you can expect</span><h2>A candid answer is part of the service.</h2><p style="color:var(--muted);line-height:1.7;font-size:17px">We won't tell every buyer that every account can be removed. We review each situation, explain what we find, and set expectations before work begins.</p></div><ul><li>Clear explanation of what we can and cannot address</li><li>Documented work on credit-report issues where appropriate</li><li>Progress visibility only with the buyer's permission</li></ul></div></section>
-    <section class="final"><div class="wrap"><span class="eyebrow">An invitation to see the process</span><h2>Let's talk about the buyer you couldn't help yet.</h2><p>Your first referral is offered at no charge. We'll explain what that covers on the call so you can decide whether this is right for your client.</p><a class="button" href="https://scheduler.zoom.us/gigi-3mtg1e/next-step">Book a 15-minute conversation</a><div class="micro">Or email <a href="mailto:gigi@pathtoqualify.com">gigi@pathtoqualify.com</a></div></div></section>
+    <section class="proof-section" id="proof"><div class="wrap">
+<div class="section-intro"><h2>The buyer&rsquo;s side of it</h2><p>Three people who came to Path to Qualify with credit issues, in their own words. Each review is set in type, with the message it came from underneath it.</p></div>
+<div class="proof-card proof-feature"><blockquote>
+      <p class="lead">These numbers are life&#8209;changing. Grateful for the work you and the team put in.</p>
+      <span class="jump">500s &rarr; 700s <em>and still climbing</em></span>
+      <p>Huge shoutout to Gigi and her amazing team for helping me level up my credit &mdash; from the 500s to the 700s and still going strong. This whole experience has been a total game&#8209;changer for me, and honestly, I couldn&rsquo;t have done it without their help.</p>
+      <p>Gigi and her crew really know their stuff, and they&rsquo;ve had my back every step of the way. If you&rsquo;re trying to fix your credit, these are the people you want on your team &mdash; 100% recommend.</p>
+      <div class="who">
+        <span class="dot">S</span>
+        <span><span class="nm">Sika</span> <span class="rl">&middot; credit restoration client</span></span>
+      </div>
+    </blockquote><figure>
+      <p class="cap">The message, as it came in</p>
+      <div class="shot"><img src="named_sika.png" alt="Text message from Sika: it felt like I woke up in a new Bugatti, these numbers are life-changing, followed by a full written review recommending Path to Qualify."></div>
+    </figure></div>
+<div class="proof-pair">
+<div class="proof-card"><blockquote><p>Never thought I&rsquo;d ever see those numbers, to be honest. I&rsquo;m glad I was patient and let things take their course &mdash; and glad I didn&rsquo;t get scammed again. I appreciate everything you do for people in situations like me.</p></blockquote><div class="who">
+        <span class="dot">J</span>
+        <span><span class="nm">Jose</span> <span class="rl">&middot; credit restoration client</span></span>
+      </div><figure>
+        <p class="cap">The message, as it came in</p>
+        <div class="shot"><img src="named_jose.png" alt="Text message from Jose: never thought I'd see those numbers, glad I was patient and glad I didn't get scammed again."></div>
+      </figure></div>
+<div class="proof-card"><blockquote><p>I am so grateful and blessed that you and your team are helping me. I never thought this would happen. Thank you.</p></blockquote><div class="who">
+        <span class="dot">S</span>
+        <span><span class="nm">Shewonner</span> <span class="rl">&middot; credit restoration client</span></span>
+      </div><figure>
+        <p class="cap">The message, as it came in</p>
+        <div class="shot"><img src="named_shew.png" alt="Text message from Shewonner: so grateful and blessed that you and your team are helping me, I never thought this would happen."></div>
+      </figure></div>
+</div>
+</div></section>
+<section class="final"><div class="wrap"><span class="eyebrow">An invitation to see the process</span><h2>Let's talk about the buyer you couldn't help yet.</h2><p>Your first referral is offered at no charge. We'll explain what that covers on the call so you can decide whether this is right for your client.</p><a class="button" href="https://scheduler.zoom.us/gigi-3mtg1e/next-step">Book a 15-minute conversation</a><div class="micro">Or email <a href="mailto:gigi@pathtoqualify.com">gigi@pathtoqualify.com</a></div></div></section>
   </main>
   <footer><div class="wrap"><div>PATH / TO / QUALIFY<br>Credit-related services. Not a lender, mortgage broker, or law firm.<br>Results vary; no particular outcome is guaranteed.</div></div></footer>
 </body>
